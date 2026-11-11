@@ -66,6 +66,18 @@ Or install globally:
 npm install -g can-i-publish
 ```
 
+## Agent Skill
+
+本仓库提供中文 `can-i-publish` skill，帮助 AI 代理检查 npm 名称、解释占用及相似度限制，并查找替代名称。
+
+```bash
+npx -y skills add BINGWU2003/can-i-publish --skill can-i-publish
+```
+
+安装后可使用 `$can-i-publish`，例如：“使用 $can-i-publish 检查 my-tool 和 @my-org/my-package；如果不可用，请寻找替代名称。”
+
+Skill 通过 Git 仓库分发，不包含在 npm 包中。完整操作说明见 [SKILL.md](skills/can-i-publish/SKILL.md)。
+
 ## Usage
 
 ```bash
